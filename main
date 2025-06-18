@@ -7,21 +7,21 @@ local w = library:CreateWindow("Sword Fight") -- Creates the window
 
 local b = w:CreateFolder("Bot") -- Creates the folder(U will put here your buttons,etc)
 
-b:Slider("Roto Speed",{
+b:Slider("ROTATE Speed",{
     min = 0; 
     max = 1; 
     precise = true;
 },function(value)
 getgenv().HowFastDanSchneiderCatchesYou = value
 end)
-b:Slider("Sword Ranga",{
+b:Slider("Touch Range",{
     min = 0; 
-    max = 15; 
+    max = 50; 
     precise = false;
 },function(value)
 getgenv().HowMuchDanSchneiderTouchesYou = value
 end)
-b:Slider("Attak Ranga",{
+b:Slider("Slap Range",{
     min = 0; 
     max = 10000; 
     precise = false;
